@@ -1,0 +1,12 @@
+services:
+  token_service:
+    build:
+      context: ./random_token_service
+    ports:
+      - "3000:3000"
+
+  token_poller:
+    build:
+      context: ./token_poller
+    depends_on:
+      - token_service
