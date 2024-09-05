@@ -1,0 +1,1 @@
+Place to store smaller rust projects intended for learning.
