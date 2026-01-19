@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
     gcc-aarch64-linux-gnu \
     build-essential \
     pkg-config \
+    libdbus-1-dev \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Add the ARM64 cross-compilation target for Rust
